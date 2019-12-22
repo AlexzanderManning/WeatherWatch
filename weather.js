@@ -8,7 +8,7 @@ class Weather{
   //fetch weather from api
   async getWeather(){
     // const response = await fetch(`https://jsonplaceholder.typicode.com/todos/1`); // makes http request only when if true
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=imperial&&APPID=${this.apiKey}`); // makes http request only when if true
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=imperial&&APPID=${this.apiKey}`); // makes http request only when if true
 
     const responseData = await response.json(); // turns our response into json only if hhtp request is made.
 
